@@ -1,0 +1,101 @@
+<!-- CAUTION: This is a professionally uglified proof-of-concept by karamble. Base for discussion, let me know your thoughts. -->
+{{define "home"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Testnet Faucet for HcashOrg/hcd">
+    <meta name="author" content="HcashOrg/hcd Developer">
+    <link rel="icon" href="./images/favicon/favicon.ico">
+    <title>HcashOrg/Hcd Testnet Faucet</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <!--  Custom favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png?v=fi5jKKtbwv">
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png?v=fi5jKKtbwv" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png?v=fi5jKKtbwv" sizes="16x16">
+    <link rel="manifest" href="./images/favicon/manifest.json?v=fi5jKKtbwv">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg?v=fi5jKKtbwv" color="#2973ff">
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico?v=fi5jKKtbwv">
+    <meta name="apple-mobile-web-app-title" content="HcashOrg/hcd - decentralized credits">
+    <meta name="application-name" content="HcashOrg/hcd - decentralized credits">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="/js/Chart.min.js"></script>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <svg class="svg-logo">
+              <use xlink:href="/images/sprites.svg#svg-HcashOrg/hcd-logo" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <br />
+      <br />
+      <br />
+      <h1>HcashOrg/hcd Testnet Faucet</h1>
+      <!-- INTRODUCTION TEXT -->
+      <div class="row">
+
+        <div class="col-md-6">
+          <p>
+            Welcome to the HcashOrg/Hcd Testnet Faucet. The faucet will send {{.Amount}}HC every {{.Limit}} seconds.
+          </p>
+        </div>
+
+	      <div class="col-md-6">
+        	<!-- ERROR / SUCCESS OUTPUT -->
+          {{if .Error}}
+          <div class="alert alert-danger">
+            {{.Error}}
+          </div>
+          {{end}}
+          {{if .Success}}
+          <div class="alert alert-success">
+            <p>Success! Transaction {{.Success}} has been sent.  You may see it on <a href="http://testnet-explorer.h.cash/explorer/tx/{{.Success}}">HC Explore</a>
+          </div>
+          {{end}}
+	        <!-- FORM BEGINS HERE -->
+          <form action="/requestfaucet" class="form-horizontal" method="post">
+	          <div class="form-group">
+              <input class="form-control input-md" type="text" name="address" placeholder="Address" required>
+              <input type="hidden" name="amount">
+              <input type="hidden" name="overridetoken">
+	          </div>
+	          <div class="form-group">
+              <button class="btn btn-primary" type="submit">Send</button>
+	          </div>
+          </form>
+        </div><!-- /col-md-6-->
+      </div><!-- /row -->
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center">Please send any unused Testnet coins back to the faucet wallet: {{.Address}}<br>
+          Balance left in default account: {{.Balance}}HC<br>
+          Have sent {{.SentToday}}HC today. Daily limit {{.DailyLimit}}HC.<br>
+          The source code is available on <a href="https://github.com/HcashOrg/testnetfaucet">GitHub</a>.</p>
+        </div>
+      </div>
+    </div> <!-- /container -->
+  </body>
+</html>
+{{end}}
