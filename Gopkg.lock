@@ -31,25 +31,18 @@
     "dcrec/secp256k1",
     "dcrec/secp256k1/schnorr",
     "dcrjson",
+    "hcutil",
+    "hcutil/base58",
     "txscript",
     "wire"
   ]
-  revision = "18cc081629f3e5eed9901f127c895a8a82835825"
+  revision = "9aac49f7da59ae9790d03e8e5498b072abf81c82"
 
 [[projects]]
   branch = "master"
   name = "github.com/HcashOrg/hcrpcclient"
   packages = ["."]
-  revision = "ab4035ccd1248103b82290a76146645c0f6e9e5e"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/HcashOrg/hcd/hcutil"
-  packages = [
-    ".",
-    "base58"
-  ]
-  revision = "3744332ddbf115271697b74199630785dc87c474"
+  revision = "bc79ffac5bcef6131f880de25da5bc0d1a4b2b22"
 
 [[projects]]
   branch = "master"
@@ -103,11 +96,11 @@
     "ripemd160",
     "sha3"
   ]
-  revision = "a49355c7e3f8fe157a85be2f77e6e269a0f89602"
+  revision = "c126467f60eb25f8f27e5a981f32a87e3965053f"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "d724993ab35d5f7540a9650f961bf47ed5e56383f3cace3d637c43e65d096f75"
+  inputs-digest = "bcb0aedc48a45339019a6fd7aef945a459a4e790126b3f7131ba900fe8f9ae2d"
   solver-name = "gps-cdcl"
   solver-version = 1
