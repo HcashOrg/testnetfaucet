@@ -9,4 +9,4 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/HcashOrg/hcutil"
+  name = "github.com/HcashOrg/hcd/hcutil"

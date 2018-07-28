@@ -3,6 +3,56 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/HcashOrg/bliss"
+  packages = [
+    ".",
+    "huffman",
+    "params",
+    "poly",
+    "sampler"
+  ]
+  revision = "f5d53c2a9b7d05ffa1600cad036d3d51dd5423cc"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/HcashOrg/hcd"
+  packages = [
+    "blockchain/stake",
+    "blockchain/stake/internal/dbnamespace",
+    "blockchain/stake/internal/ticketdb",
+    "blockchain/stake/internal/tickettreap",
+    "chaincfg",
+    "chaincfg/chainec",
+    "chaincfg/chainhash",
+    "crypto",
+    "crypto/bliss",
+    "database",
+    "dcrec/edwards",
+    "dcrec/secp256k1",
+    "dcrec/secp256k1/schnorr",
+    "dcrjson",
+    "txscript",
+    "wire"
+  ]
+  revision = "18cc081629f3e5eed9901f127c895a8a82835825"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/HcashOrg/hcrpcclient"
+  packages = ["."]
+  revision = "ab4035ccd1248103b82290a76146645c0f6e9e5e"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/HcashOrg/hcd/hcutil"
+  packages = [
+    ".",
+    "base58"
+  ]
+  revision = "3744332ddbf115271697b74199630785dc87c474"
+
+[[projects]]
+  branch = "master"
   name = "github.com/agl/ed25519"
   packages = [
     ".",
@@ -35,56 +85,6 @@
   revision = "31079b6807923eb23992c421b114992b95131b55"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/HcashOrg/bliss"
-  packages = [
-    ".",
-    "huffman",
-    "params",
-    "poly",
-    "sampler"
-  ]
-  revision = "4e645dc8a3f1d22f42fe99cf8abc97f53607b800"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/HcashOrg/hcd"
-  packages = [
-    "blockchain/stake",
-    "blockchain/stake/internal/dbnamespace",
-    "blockchain/stake/internal/ticketdb",
-    "blockchain/stake/internal/tickettreap",
-    "chaincfg",
-    "chaincfg/chainec",
-    "chaincfg/chainhash",
-    "crypto",
-    "crypto/bliss",
-    "database",
-    "dcrec/edwards",
-    "dcrec/secp256k1",
-    "dcrec/secp256k1/schnorr",
-    "dcrjson",
-    "txscript",
-    "wire"
-  ]
-  revision = "6a80cb1302d382e6a08871709dff47238fc37535"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/HcashOrg/hcrpcclient"
-  packages = ["."]
-  revision = "ec732bda4ebe83c151c49a9b5588fd2b6e7fdd4c"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/HcashOrg/hcutil"
-  packages = [
-    ".",
-    "base58"
-  ]
-  revision = "b67ae246338f47ffd45c31463606fcdf1e982ee2"
-
-[[projects]]
   name = "github.com/dchest/blake256"
   packages = ["."]
   revision = "dee3fe6eb0e98dc774a94fc231f85baf7c29d360"
@@ -108,6 +108,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "d86e909c12ce4c1349e625fd93ce09d178f0e4f3a5bcfe1638d7798624862900"
+  inputs-digest = "d724993ab35d5f7540a9650f961bf47ed5e56383f3cace3d637c43e65d096f75"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -18,7 +18,7 @@ import (
 
 	"net"
 
-	"github.com/HcashOrg/hcutil"
+	"github.com/HcashOrg/hcd/hcutil"
 	"github.com/HcashOrg/hcrpcclient"
 )
 
