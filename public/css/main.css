@@ -97,3 +97,132 @@ footer {
     max-width: 100%;
     padding: 11px 13px;
 }
+
+
+
+
+
+/*
+ * by hope
+*/
+
+/*@font-face {
+	font-family: 'TekoSemibold';
+	src: url('../fonts/TekoSemibold/TekoSemibold.eot');
+	src: url('../fonts/TekoSemibold/TekoSemibold.eot') format('embedded-opentype'),
+	url('../fonts/TekoSemibold/TekoSemibold.woff2') format('woff2'),
+	url('../fonts/TekoSemibold/TekoSemibold.woff') format('woff'),
+	url('../fonts/TekoSemibold/TekoSemibold.ttf') format('truetype'),
+	url('../fonts/TekoSemibold/TekoSemibold.svg#TekoSemibold') format('svg');
+}
+@font-face {
+	font-family: 'TekoRegular';
+	src: url('../fonts/TekoRegular/TekoRegular.eot');
+	src: url('../fonts/TekoRegular/TekoRegular.eot') format('embedded-opentype'),
+	url('../fonts/TekoRegular/TekoRegular.woff2') format('woff2'),
+	url('../fonts/TekoRegular/TekoRegular.woff') format('woff'),
+	url('../fonts/TekoRegular/TekoRegular.ttf') format('truetype'),
+	url('../fonts/TekoRegular/TekoRegular.svg#TekoRegular') format('svg');
+}
+@font-face {
+	font-family: 'TekoMedium';
+	src: url('../fonts/TekoMedium/TekoMedium.eot');
+	src: url('../fonts/TekoMedium/TekoMedium.eot') format('embedded-opentype'),
+	url('../fonts/TekoMedium/TekoMedium.woff2') format('woff2'),
+	url('../fonts/TekoMedium/TekoMedium.woff') format('woff'),
+	url('../fonts/TekoMedium/TekoMedium.ttf') format('truetype'),
+	url('../fonts/TekoMedium/TekoMedium.svg#TekoMedium') format('svg');
+}
+@font-face {
+	font-family: 'TekoBold';
+	src: url('../fonts/TekoBold/TekoBold.eot');
+	src: url('../fonts/TekoBold/TekoBold.eot') format('embedded-opentype'),
+	url('../fonts/TekoBold/TekoBold.woff2') format('woff2'),
+	url('../fonts/TekoBold/TekoBold.woff') format('woff'),
+	url('../fonts/TekoBold/TekoBold.ttf') format('truetype'),
+	url('../fonts/TekoBold/TekoBold.svg#TekoBold') format('svg');
+}
+@font-face {
+	font-family: 'JuraSemiBold';
+	src: url('../fonts/JuraSemiBold/JuraSemiBold.eot');
+	src: url('../fonts/JuraSemiBold/JuraSemiBold.eot') format('embedded-opentype'),
+	url('../fonts/JuraSemiBold/JuraSemiBold.woff2') format('woff2'),
+	url('../fonts/JuraSemiBold/JuraSemiBold.woff') format('woff'),
+	url('../fonts/JuraSemiBold/JuraSemiBold.ttf') format('truetype'),
+	url('../fonts/JuraSemiBold/JuraSemiBold.svg#JuraSemiBold') format('svg');
+}*/
+@font-face {
+	font-family: 'JuraRegular';
+	src: url('../fonts/JuraRegular/JuraRegular.eot');
+	src: url('../fonts/JuraRegular/JuraRegular.eot') format('embedded-opentype'),
+	url('../fonts/JuraRegular/JuraRegular.woff2') format('woff2'),
+	url('../fonts/JuraRegular/JuraRegular.woff') format('woff'),
+	url('../fonts/JuraRegular/JuraRegular.ttf') format('truetype'),
+	url('../fonts/JuraRegular/JuraRegular.svg#JuraRegular') format('svg');
+}
+/*@font-face {
+	font-family: 'JuraMedium';
+	src: url('../fonts/JuraMedium/JuraMedium.eot');
+	src: url('../fonts/JuraMedium/JuraMedium.eot') format('embedded-opentype'),
+	url('../fonts/JuraMedium/JuraMedium.woff2') format('woff2'),
+	url('../fonts/JuraMedium/JuraMedium.woff') format('woff'),
+	url('../fonts/JuraMedium/JuraMedium.ttf') format('truetype'),
+	url('../fonts/JuraMedium/JuraMedium.svg#JuraMedium') format('svg');
+}
+@font-face {
+	font-family: 'JuraLight';
+	src: url('../fonts/JuraLight/JuraLight.eot');
+	src: url('../fonts/JuraLight/JuraLight.eot') format('embedded-opentype'),
+	url('../fonts/JuraLight/JuraLight.woff2') format('woff2'),
+	url('../fonts/JuraLight/JuraLight.woff') format('woff'),
+	url('../fonts/JuraLight/JuraLight.ttf') format('truetype'),
+	url('../fonts/JuraLight/JuraLight.svg#JuraLight') format('svg');
+}*/
+@font-face {
+	font-family: 'JuraBold';
+	src: url('../fonts/JuraBold/JuraBold.eot');
+	src: url('../fonts/JuraBold/JuraBold.eot') format('embedded-opentype'),
+	url('../fonts/JuraBold/JuraBold.woff2') format('woff2'),
+	url('../fonts/JuraBold/JuraBold.woff') format('woff'),
+	url('../fonts/JuraBold/JuraBold.ttf') format('truetype'),
+	url('../fonts/JuraBold/JuraBold.svg#JuraBold') format('svg');
+}
+
+body {
+	font-family: JuraRegular;
+	background-color: #22102A;
+}
+
+.navbar-default {
+	background-color: #8839D1;
+	height: auto;
+}
+
+.form-control:focus {
+	border-color: transparent;
+}
+
+.form-horizontal {
+	text-align: center;
+}
+.form-horizontal .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+.btn-primary {
+	padding: 10px;
+	background: #8839D1;
+}
+.btn-primary:hover {
+	background: #7037b7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: #8839D1;
+}

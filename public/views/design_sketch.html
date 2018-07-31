@@ -28,10 +28,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="/js/Chart.min.js"></script>
+      <link rel="stylesheet" href="../css/main.css">
+      <link rel="stylesheet" href="../../../hcash_hcstakepool/public/css/styles.css">
   </head>
   <body>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!--<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -47,45 +49,43 @@
           </a>
         </div>
       </div>
-    </nav>
+    </nav>-->
     <div class="container">
       <br />
       <br />
       <br />
-      <h1>HcashOrg/hcd Testnet Faucet</h1>
-      <!-- INTRODUCTION TEXT -->
       <div class="row">
 
-        <div class="col-md-6">
-          <p>
-            Welcome to the HcashOrg/Hcd Testnet Faucet. The faucet will send {{.Amount}}HC every {{.Limit}} seconds.
-          </p>
-        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <h1>HcashOrg/hcd Testnet Faucet</h1>
+            <!-- INTRODUCTION TEXT -->
+            <p>
+                Welcome to the HcashOrg/Hcd Testnet Faucet. The faucet will send {{.Amount}}HC every {{.Limit}} seconds.
+            </p>
 
-	      <div class="col-md-6">
-        	<!-- ERROR / SUCCESS OUTPUT -->
-          {{if .Error}}
-          <div class="alert alert-danger">
-            {{.Error}}
-          </div>
-          {{end}}
-          {{if .Success}}
-          <div class="alert alert-success">
-            <p>Success! Transaction {{.Success}} has been sent.  You may see it on <a href="http://testnet-explorer.h.cash/explorer/tx/{{.Success}}">HC Explore</a>
-          </div>
-          {{end}}
-	        <!-- FORM BEGINS HERE -->
-          <form action="/requestfaucet" class="form-horizontal" method="post">
-	          <div class="form-group">
-              <input class="form-control input-md" type="text" name="address" placeholder="Address" required>
-              <input type="hidden" name="amount">
-              <input type="hidden" name="overridetoken">
-	          </div>
-	          <div class="form-group">
-              <button class="btn btn-primary" type="submit">Send</button>
-	          </div>
-          </form>
-        </div><!-- /col-md-6-->
+            <!-- ERROR / SUCCESS OUTPUT -->
+            {{if .Error}}
+            <div class="alert alert-danger">
+                {{.Error}}
+            </div>
+            {{end}}
+            {{if .Success}}
+            <div class="alert alert-success">
+                <p>Success! Transaction {{.Success}} has been sent.  You may see it on <a href="http://testnet-explorer.h.cash/explorer/tx/{{.Success}}">HC Explore</a>
+            </div>
+            {{end}}
+            <!-- FORM BEGINS HERE -->
+            <form action="/requestfaucet" class="form-horizontal" method="post">
+                <div class="form-group">
+                    <input class="form-control input-md" type="text" name="address" placeholder="Address" required>
+                    <input type="hidden" name="amount">
+                    <input type="hidden" name="overridetoken">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
       </div><!-- /row -->
       <div class="row">
         <div class="col-md-12">
